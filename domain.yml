@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inquire_features
+  - business_communication
+  - team_collaboration
+  - customer_interaction
+  - target_customer
+  - inquire_download
+  - small_business_suitability
+  - inquire_security
+  - external_collaborators
+  - user_friendly
+  - customer_support
+  - ask_subscription_plans
+  - upgrade_plan
+  - downgrade_plan
+  - ask_multiple_devices
+  - ask_device_compatibility
+  - provide_feedback
+  - ask_availability_languages_countries
+  - ask_trial_availability
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_features:
+  - text: "ShopTalk helps MSMB(Micro, Small and Medium Bussinesses) owners and teams communicate by separating personal, business, and team interactions, enabling real-time data sharing, invoices, media, and order status updates."
+    
+  utter_business_communication:
+  - text: "With ShopTalk, you can send invoices, attach price quotes, and share media with customers effortlessly."
+    
+  utter_team_collaboration:
+  - text: "ShopTalk enables seamless team collaboration by keeping communication organized and allowing easy sharing of forms, data, and order statuses."
+    
+  utter_customer_interaction:
+  - text: "ShopTalk allows you to send order status updates, collect data using forms, and engage customers effectively."
+  
+  utter_target_customer:
+  - text: "ShopTalk is designed for small and medium businesses, but it can scale to support teams from 1 to 1000+. Large enterprises can integrate ShopTalk with their existing systems via the ShopTalk Enterprise Integration Framework."
+  
+  utter_download:
+  - text: "You can download ShopTalk Business App from Google Play Store (the Apple AppStore release is in the works). Simply search for 'ShopTalk' or click here to download the app. It takes just 2 minutes to set up your team and get started!"
+  
+  utter_small_business_suitability:
+  - text: "Yes, ShopTalk is designed to cater to the needs of businesses of all sizes. Whether you run a small startup or a large enterprise, the app's features are scalable and adaptable to various business requirements."
+  
+  utter_security:
+  - text: "Yes, security is a top priority for ShopTalk App. The application employs robust encryption protocols and security measures to ensure that your business data and communications remain private and protected."
+
+  utter_external_collaborators:
+  - text: "At the moment, ShopTalk does not support collaboration with 'guest' members external to the team."
+  actions: []
+  
+  utter_user_friendly:
+  - text: "ShopTalk is designed with user-friendliness in mind. Its intuitive interface makes it easy to navigate, communicate effectively, and collaborate with minimal learning curve."
+  
+  utter_support:
+  - text: "Multiple avenues are available for Support & Help. There are in-app help, & YouTube videos as a baseline. There is email support & phone support based on subscription tier. Finally there's paid support available on a per incidence basis."
+
+  utter_subscription_plans:
+  - text: "Yes, ShopTalk app offers various subscription plans with different features and functionalities, including a FREE tier. Users can choose a plan based on their business needs and upgrade or downgrade as necessary."
+  
+  utter_upgrade_plan:
+  - text: "You can upgrade your ShopTalk subscription by visiting the settings section in the app and selecting 'Upgrade Plan'. Let me know if you need further assistance."
+  
+  utter_downgrade_plan:
+  - text: "To downgrade your ShopTalk subscription, go to your account settings and select 'Manage Subscription'. You can then choose a lower-tier plan as needed."
+
+  utter_multiple_devices:
+  - text: "ShopTalk app is designed to be used on a single device per user, on which the SIM with the mobile number used for registration is installed. You can switch to a different device when you move your SIM to another device. The app would stop working on the older device."
+
+  utter_device_compatibility:
+  - text: "Right now ShopTalk is available on Android devices. iPhone & Desktop versions are in development."
+
+  utter_provide_feedback:
+  - text: "ShopTalk has a feedback section within the app. You can use this to report issues, suggest improvements, or seek assistance from the support team."
+
+  utter_availability_languages_countries:
+  - text: "ShopTalk currently works in India. We'll be expanding to other countries in the coming months. Multi-lingual support is also in the works."
+
+  utter_trial_availability:
+  - text: "Absolutely. ShopTalk is FREE to try all the features. Upon end of the trial period, there's still a version available to use for Free."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
